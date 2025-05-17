@@ -1,0 +1,28 @@
+services:
+
+  mininet:
+    image: mininet-img
+    container_name: mininet
+    hostname: mininet-vm
+    privileged: true
+    networks:
+      - mininet-net
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535
+      nproc:
+        soft: 65535
+        hard: 65535
+    tty: true
+    stdin_open: true
+
+networks:
+  mininet-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24
