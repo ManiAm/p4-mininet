@@ -2,10 +2,7 @@
 
 The p4-mininet project is a lightweight, containerized P4 network simulation environment built using Docker, Mininet, and BMv2, enabling users to experiment with basic IPv4 forwarding through a custom P4 program. The setup includes a pre-configured Docker container running Mininet and Open vSwitch on the host, and it leverages the BMv2 software switch to emulate programmable data planes.
 
-The following guides provide an introduction to Mininet and P4:
-
-- [Mininet Introduction](mininet.md)
-- [P4 Introduction](p4.md)
+> See the [P4 Introduction](p4.md) for an overview of the language, its protocol- and target-independent design, the P4C compiler, and supported target architectures (BMv2, DPDK, eBPF).
 
 ## Getting Started
 
